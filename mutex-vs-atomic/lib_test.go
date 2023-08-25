@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func BenchmarkProcess(b *testing.B) {
+func BenchmarkMutex(b *testing.B) {
 	InitMutexMap()
 
 	initBenchmark()
@@ -14,7 +14,7 @@ func BenchmarkProcess(b *testing.B) {
 	}
 }
 
-func BenchmarkMemcached(b *testing.B) {
+func BenchmarkAtomic(b *testing.B) {
 	InitAtomicMap()
 
 	initBenchmark()
